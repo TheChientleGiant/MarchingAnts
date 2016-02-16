@@ -19,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        for(int i = 1; i < 11; i++){
-            Log.d(TAG, "Ants go marching " + i + " by " + i + ". Hoorah! Hoorah!");
+        String[] numbers = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
+
+        for(String number : numbers){
+            Log.d(TAG, "Ants go marching " + number + " by " + number + ". Hoorah! Hoorah!");
         }
     }
 
